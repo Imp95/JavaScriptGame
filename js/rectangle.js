@@ -34,7 +34,7 @@ class Rectangle {
 		ctx.drawImage(imageDanger,this.x, this.y, this.l, this.h)
 	  }
 	  else if(this.couleur=="green"){
-		ctx.drawImage(imageFood,this.x, this.y, this.l, auto)
+		ctx.drawImage(imageFood,this.x, this.y, this.l, this.h)
 	  }
       
       ctx.restore();
