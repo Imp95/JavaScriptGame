@@ -25,8 +25,17 @@ class Rectangle {
       // la fin
       ctx.save();
       
-      ctx.fillStyle = this.couleur;
-	  ctx.fillRect(this.x, this.y, this.l, this.h);
+      /*ctx.fillStyle = this.couleur;
+	  ctx.fillRect(this.x, this.y, this.l, this.h);*/
+	  	  if(this.couleur=="blue"){
+		ctx.drawImage(imageLife,this.x, this.y, this.l, this.h)
+	  }
+	  else if(this.couleur=="red"){
+		ctx.drawImage(imageDanger,this.x, this.y, this.l, this.h)
+	  }
+	  else if(this.couleur=="green"){
+		ctx.drawImage(imageFood,this.x, this.y, this.l, auto)
+	  }
       
       ctx.restore();
     }
